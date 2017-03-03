@@ -6,11 +6,12 @@
   "scripts": {
     "start": "webpack-dev-server --hot --inline --content-base ./public",
     "build": "webpack",
-    "test": "mocha --require test/helpers/setup.js"
+    "test": "mocha --require test/helpers/setup.js",
+    "deploy" : "npm run build && gh-pages -d build"
   },
   "author": "kirsten swanson",
   "license": "ISC",
-  "homepage": "http://kirstenswanson.io/react-webpack-sass-enzyme/",
+  "homepage": "http://kirstenswanson.io/react-webpack-sass-enzyme/public/index.html",
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
@@ -20,6 +21,7 @@
     "chai": "^3.5.0",
     "css-loader": "^0.26.1",
     "enzyme": "^2.6.0",
+    "gh-pages": "^0.12.0",
     "mocha": "^3.2.0",
     "mocha-loader": "^1.0.0",
     "node-sass": "^4.1.1",
