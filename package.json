@@ -10,6 +10,7 @@
   },
   "author": "kirsten swanson",
   "license": "ISC",
+  "homepage": "https://github.com/swanie21/react-webpack-sass-enzyme/public/index.html",
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
